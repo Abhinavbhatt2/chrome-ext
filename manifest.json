@@ -1,12 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Auto Load & Download CSV",
+  "name": "Trademark Scraper",
   "version": "1.0",
-  "permissions": ["activeTab", "scripting"],
-  "content_scripts": [
-    {
-      "matches": ["https://tmrsearch.ipindia.gov.in/*"],
-      "js": ["content.js"]
+  "description": "Scrape trademark data using Puppeteer",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
     }
-  ]
+  }
 }
